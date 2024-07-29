@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link rel="stylesheet" href="style.css">
+    <script src="formulario.js"></script>
 </head>
 <body>
 
@@ -16,29 +17,31 @@
     <input type="date" id="data" name="data" value="data"> <br> <br>
 
     <label for="text"> Nome: </label><br>
-    <input placeholder="Seu nome"> <br> <br>
+    <input class="input-texto" type="text" id="nome" value="nome" placeholder="nome"> <br> <br>
+
+    <label for="password"> Senha: </label><br>
+    <input type="password" id="senha" name="senha" value="senha"> <br> <br>
     
     <label for="email"> Email: </label><br>
-    <input placeholder="Seu Email"> <br> <br>
+    <input class="input-texto" id="email" name="email" value="email" placeholder="email"><br> <br>
+
 
     <h3>Como você esta se sentindo hoje?</h3>
 
-    <label for="feliz">Feliz😁</label><br> 
-    <input type="radio" id="feliz" name="newsletter" value="feliz"> <br> <br>
+    <label for="sentimento">Feliz😁</label><br> 
+    <input type="radio" id="feliz" name="sentimento" value="feliz"> <br> <br>
     
-    <label for="triste">Triste😭</label><br> 
-    <input type="radio" id="triste" name="newsletter" value="triste"> <br> <br>
+    <label for="sentimento">Triste😭</label><br> 
+    <input type="radio" id="triste" name="sentimento" value="triste"> <br> <br>
 
 
-    <label for="normal">Normal🙂</label><br> 
-    <input type="radio" id="normal" name="newsletter" value="normal"> <br> <br>
-
-    <figure>
+    <label for="sentimento">Normal🙂</label><br> 
+    <input type="radio" id="normal" name="sentimento" value="normal"> <br> <br>
 
     <img src="https://hiit20.gpages.com.br/files/sites/9933/2018/12/%C3%81gua-pot%C3%A1vel.jpg">
-    <figcaption>De acordo com a Organização Mundial da Saúde, 
-    o cálculo de quanto de água devemos beber todos os dias é mais simples do que parece. 
-    São 35 ml diários para cada quilo que temos. Ou seja, uma pessoa de 60 kg deve fazer a conta 60 kg x 35 ml e descobrir que a recomendação é de 2,1 litros por dia.</figcaption> </figure> <br>
+    <h2>De acordo com a Organização Mundial da Saúde, 
+        o cálculo de quanto de água devemos beber todos os dias é mais simples do que parece. 
+        São 35 ml diários para cada quilo que temos. Ou seja, uma pessoa de 60 kg deve fazer a conta 60 kg x 35 ml e descobrir que a recomendação é de 2,1 litros por dia.</h2><br>
 
     <h3>Você já bebeu os litros de água necessários hoje?</h3>
 
@@ -48,8 +51,7 @@
     <label for="checkbox">Não</label><br> 
     <input type="checkbox" id="nao" name="newsletter" value="nao"> <br> <br>
 
-    
-    <button>Enviar</button>
+    <button onclick = "enviar()" type = "submit" name = "enviar" value = "enviar">Enviar</button>
 
 </body>
 </html>
