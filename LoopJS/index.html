@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Exercícios de Loop em JavaScript</title>
+</head>
+<body>
+    <h1>Exercícios de Loop em JavaScript</h1>
+    <script>
+
+        // Coloque aqui os exercícios
+        console.log ("Exercicio 1")
+        console.log("1. Contagem Batata");
+            for (let i = 1; i <= 100; i++){
+                if (i % 3 === 0){
+                console.log("Batata")
+                }
+                else if (i % 5 ===0){
+                    console.log("Doce")
+                }
+                else if(i % 3 === 0 && i % 5===0){
+                    console.log("Batata doce")
+                }
+                console.log(i)
+            }
+
+        console.log("Exercicio 2")
+        let soma = 0;
+        for (let i = 1; i <= 10; i++){
+            console.log(i)
+            soma += i;
+        }
+        console.log ("Soma de todos esses números: " + soma)
+
+        console.log("Exercicio 3")
+        for (let i = 1; i <= 5; i++){
+            let vazio = '';
+            for( let c = 1; c <= i; c++)
+                vazio += c;
+                console.log(vazio)
+        }
+
+
+
+
+    </script>
+</body>
+</html> 
